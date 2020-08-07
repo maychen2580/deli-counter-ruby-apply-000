@@ -16,9 +16,16 @@ def line(deli)
   end
 end
 # looping and iteration: add new people to the end of the current line
-def take_a_number(deli, name)
-  deli << name
-  puts "Welcome, #{name}. You are number #{deli.length} in line."
+# def take_a_number(deli, name)
+#   deli << name
+#   puts "Welcome, #{name}. You are number #{deli.length} in line."
+# end
+
+def take_a_number(deli)
+  count = 0
+  deli << count
+  puts "Welcome, #{count}!"
+count += 1
 end
 # looping Currently line. putout sign if it is empty
 def now_serving(deli)
